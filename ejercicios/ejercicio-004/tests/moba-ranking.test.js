@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { calcularResultado, ordenarRanking } from '../codigo/moba-ranking.js';
+import { calcularResultado, ordenarRanking } from '../resoluciones/jose-rodriguez/moba-ranking';
 
 describe('ejercicio 004', () => {
   it('calcula suma numerica y no concatena texto', () => {
