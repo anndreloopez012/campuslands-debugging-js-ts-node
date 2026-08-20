@@ -1,5 +1,6 @@
+
 export function calcularResultado(datos) {
-    if(!Array.isArray(datos)) return 0;
+    if (!Array.isArray(datos)) return 0;
 
     return datos.reduce((acumulado, item) => {
         const puntosNum = Number(item?.puntos) || 0;

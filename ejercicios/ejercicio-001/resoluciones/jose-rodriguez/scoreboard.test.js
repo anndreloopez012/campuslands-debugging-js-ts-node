@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { calcularResultado, ordenarRanking } from './scoreboard.js';
 
-describe('ejercicio 001 - Raking gamer con parseo numerico', () => {
-    it('convierte los puntos recibidos como string a numero y realiza la suma correctamente', () => {
+describe('ejercicio 001 - Ranking gamer con parseo numérico', () => {
+    it('convierte los puntos recibidos como string a número y realiza la suma correctamente', () => {
         const partidas = [
             { puntos: '150' },
             { puntos: 200 },
@@ -13,7 +13,7 @@ describe('ejercicio 001 - Raking gamer con parseo numerico', () => {
         expect(total).toBe(400);
     });
 
-    it('ordenar la lista de jusgadores de manera descendente segun sus puntos', () => {
+    it('ordena la lista de jugadores de manera descendente según sus puntos', () => {
         const jugadores = [
             { nombre: 'GamerA', puntos: '100' },
             { nombre: 'GamerB', puntos: 500 },
