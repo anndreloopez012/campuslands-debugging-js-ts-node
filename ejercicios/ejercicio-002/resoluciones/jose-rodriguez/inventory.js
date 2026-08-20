@@ -1,7 +1,18 @@
-export function calcularResultado(datos) {
-    return datos.reduce((acumulador, item) => acumulador + item.puntos, 0);
+export function aplicarPocion(jugador, cura) {
+    return{
+        ...jugador,
+        vida: jugador.vida + cura
+    };
 }
 
-export function ordenarRanking(jugadores) {
-    return [...jugadores].sort((a, b) => b.puntos - a.puntos);
+export function consumirItemInventario(inventario, idItem) {
+    return inventario.map(item => {
+        if (item.id === idItem) {
+            return{
+                ...item, 
+                cantidad: Math.max(0, item.cantidad - 1)
+            };
+        }
+        return item;
+    });
 }
