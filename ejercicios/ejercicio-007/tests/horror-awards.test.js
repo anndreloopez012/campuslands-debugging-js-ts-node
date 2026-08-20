@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { calcularResultado, ordenarRanking } from '../codigo/horror-awards.js';
+import { calcularResultado, ordenarRanking } from '../resoluciones/jose-rodriguez/horror-awards';
 
 describe('ejercicio 007', () => {
   it('calcula suma numerica y no concatena texto', () => {
