@@ -9,7 +9,7 @@
 
 ## Cambio aplicado
 - Se refactorizó `calcularResultado` con `.reduce()` aplicando `Number(item.puntos)` para acumular valores numéricos reales.
-- Se corrigió el comparador de `.sort()` a `puntosB - puntosA` para garantizar el ranking descendente
+- Se corrigió el comparador de `.sort()` a `puntosB - puntosA` para garantizar el ranking descendente.
 
 ## Comando usado para validar
 ```bash

@@ -17,3 +17,4 @@ export function ordenarRanking(jugadores) {
         return puntosB - puntosA;
     });
 }
+

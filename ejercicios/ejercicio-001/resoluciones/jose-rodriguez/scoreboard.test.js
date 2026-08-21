@@ -25,3 +25,4 @@ describe('ejercicio 001 - Ranking gamer con parseo numérico', () => {
         expect(ranking.map(j => j.nombre)).toEqual(['GamerB', 'GamerC', 'GamerA']);
     });
 });
+
