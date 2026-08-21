@@ -1,41 +1,17 @@
-// ejercicio 19 - 34
+export function calcularResultado(datos) {
 
-  
+// BUG intencional: la implementacion no respeta completamente el README ni los tests.
 
-export type Registro = {
-
-nombre: string;
-
-puntos: number;
-
-activo?: boolean;
-
-};
-
-  
-
-export function calcularPromedio(registros: Registro[]): number {
-
-// FIX: se divide entre la cantidad de registros activos, no entre el total.
-
-const activos = registros.filter((registro) => registro.activo !== false);
-
-const total = activos.reduce((suma, registro) => suma + registro.puntos, 0);
-
-return total / activos.length;
+return datos.reduce((total, item) => total + item.puntos, 0);
 
 }
 
   
 
-export function obtenerMejor(registros: Registro[]): Registro | undefined {
+export function ordenarRanking(jugadores) {
 
-// FIX: se ordena de mayor a menor para devolver el puntaje más alto.
+// BUG intencional: orden ascendente cuando deberia priorizar mejores resultados.
 
-return [...registros].sort((a, b) => b.puntos - a.puntos)[0];
+return [...jugadores].sort((a, b) => b.puntos - a.puntos);
 
 }
-
-  
-
-// ejercicio 20
