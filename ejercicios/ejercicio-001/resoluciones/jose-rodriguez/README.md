@@ -14,3 +14,4 @@
 ## Comando usado para validar
 ```bash
 npm test -- ejercicios/ejercicio-001/resoluciones/jose-rodriguez/scoreboard.test.js
+
