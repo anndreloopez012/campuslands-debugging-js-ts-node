@@ -16,7 +16,7 @@
     "@types/supertest": "^6.0.2",
     "supertest": "^7.0.0",
     "typescript": "^5.5.4",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.12"
   },
   "dependencies": {
     "express": "^4.19.2",
